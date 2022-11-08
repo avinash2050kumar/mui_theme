@@ -1,10 +1,17 @@
 import React, { useContext, useMemo } from 'react'
 import { useLocalStorage } from '../hooks/useMakeStorage'
 
-export const SettingsContext = React.createContext({})
+type SettingsContextProps = {
+	theme: 'light' | 'dark'
+	switchTheme: (theme: any) => {}
+}
+
+const SettingsContext = React.createContext<SettingsContextProps>(
+	{} as SettingsContextProps
+)
 
 export const SettingProvider = ({ children, setting }: any) => {
-	const [theme, setTheme] = useLocalStorage('theme', false)
+	const [theme, setTheme] = useLocalStorage('theme', setting.theme || 'light')
 
 	const value = useMemo(() => {
 		return {
@@ -14,10 +21,12 @@ export const SettingProvider = ({ children, setting }: any) => {
 				setTheme(theme)
 			}
 		}
-	}, [setting])
+	}, [setting, theme, setTheme])
 
 	return (
-		<SettingsContext.Provider ></SettingsContext.Provider>
+		<SettingsContext.Provider value={value}>
+			{children}
+		</SettingsContext.Provider>
 	)
 }
 
