@@ -1,13 +1,13 @@
 import React from 'react'
 import { useSettings } from '../context/settings'
-import { Switch } from '@mui/material'
+import { Badge, Card, Slider, Switch, TextField } from '@mui/material'
 import Button from '@mui/material/Button'
 
 const MaterialUIComponents = () => {
 	const { theme, switchTheme } = useSettings()
 
 	return (
-		<div className="App">
+		<Card sx={{ maxWidth: 275 }}>
 			<Switch
 				checked={theme === 'dark'}
 				onClick={() =>
@@ -16,8 +16,25 @@ const MaterialUIComponents = () => {
 						: switchTheme('dark')
 				}
 			/>
+			<br />
+			<br />
 			<Button variant="contained">Hello World</Button>
-		</div>
+			<br />
+			<br />
+			<TextField
+				id="outlined-basic"
+				label="Outlined"
+				variant="outlined"
+			/>
+			<br />
+			<br />
+			<Badge badgeContent={4} color="primary">
+				Avinash
+			</Badge>
+			<br />
+			<br />
+			<Slider defaultValue={30} aria-label="Disabled slider" />
+		</Card>
 	)
 }
 

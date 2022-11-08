@@ -1,9 +1,11 @@
 import React, { useContext, useMemo } from 'react'
 import { useLocalStorage } from '../hooks/useMakeStorage'
 
+type ThemeProps = 'light' | 'dark'
+
 type SettingsContextProps = {
-	theme: 'light' | 'dark'
-	switchTheme: (theme: any) => {}
+	theme: ThemeProps
+	switchTheme: (theme: ThemeProps) => {}
 }
 
 const SettingsContext = React.createContext<SettingsContextProps>(
@@ -17,7 +19,7 @@ export const SettingProvider = ({ children, setting }: any) => {
 		return {
 			...setting,
 			theme,
-			switchTheme: (theme: any) => {
+			switchTheme: (theme: ThemeProps) => {
 				setTheme(theme)
 			}
 		}
