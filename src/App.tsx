@@ -6,7 +6,9 @@ import { Root } from './screen/root'
 
 function App() {
 	return (
-		<SettingProvider setting={{}}>
+		<SettingProvider
+			setting={{ theme: 'light', locale: 'en', direction: 'ltr' }}
+		>
 			<Root />
 		</SettingProvider>
 	)

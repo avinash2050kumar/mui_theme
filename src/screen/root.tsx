@@ -4,19 +4,22 @@ import { createTheme } from '@mui/material/styles'
 import { getDesignTokens } from '../theme'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { MaterialUIComponents } from './muicomponents'
+import * as locales from '../locales'
 
 const Root = () => {
-	const { theme } = useSettings()
+	const { theme, locale, direction } = useSettings()
 
 	const themeMode = React.useMemo(
-		() => createTheme(getDesignTokens(theme)),
-		[theme]
+		() => createTheme(getDesignTokens(theme), locales[locale]),
+		[theme, locale]
 	)
 
 	return (
 		<ThemeProvider theme={themeMode}>
-			<CssBaseline />
-			<MaterialUIComponents />
+			<div dir={direction}>
+				<CssBaseline />
+				<MaterialUIComponents />
+			</div>
 		</ThemeProvider>
 	)
 }

@@ -2,12 +2,19 @@ import { PaletteMode } from '@mui/material'
 
 const lightPalette = {
 	primary: {
-		main: '#267755'
+		main: '#267755',
+		contrastText: '#000'
 	},
 	divider: '#555',
 	background: {
 		default: '#FFFFFF',
-		paper: '#E9F1EE'
+		paper: '#fff'
+	},
+	customColor: {
+		light: '',
+		dark: '',
+		main: '#267755',
+		contrastText: '#fff'
 	},
 	text: {
 		primary: '#000',
@@ -17,12 +24,18 @@ const lightPalette = {
 
 const darkPalette = {
 	primary: {
-		main: '#206347'
+		main: '#267755',
+		contrastText: '#ffffff'
 	},
 	divider: '#999',
 	background: {
 		default: '#222',
 		paper: '#333'
+	},
+	customColor: {
+		light: '',
+		dark: '',
+		contrastText: '#ffcc00'
 	},
 	text: {
 		primary: '#fff',
