@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSettings } from '../context/settings'
 import {
 	Autocomplete,
@@ -15,10 +15,12 @@ import { SupportedLanguage } from '../data/locale'
 import { useTranslate } from '../hooks/translate'
 import { WbSunny, DarkMode } from '@mui/icons-material'
 import DenseTable from '../components/table'
+import { OtpInput } from '../components/OtpInput'
 
 // It's only for demo purpose
 // It's not a reusable component
 const MaterialUIComponents = () => {
+	const [value, setValue] = useState('')
 	const { switchTheme, setLocale, locale, setDirection, theme } =
 		useSettings()
 	const translate = useTranslate()
@@ -75,8 +77,12 @@ const MaterialUIComponents = () => {
 					lang={locale}
 				/>
 				<div style={{ height: 20 }} />
-				<DenseTable />
-
+				{/*<DenseTable />*/}
+				<OtpInput
+					value={value}
+					onChange={val => setValue(val)}
+					length={6}
+				/>
 				<CardActions></CardActions>
 			</Card>
 		</div>
