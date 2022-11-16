@@ -82,6 +82,7 @@ const MaterialUIComponents = () => {
 					value={value}
 					onChange={val => setValue(val)}
 					length={6}
+					error
 				/>
 				<CardActions></CardActions>
 			</Card>
