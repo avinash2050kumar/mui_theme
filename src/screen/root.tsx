@@ -5,6 +5,7 @@ import { getDesignTokens } from '../theme'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { MaterialUIComponents } from './muicomponents'
 import * as locales from '../locales'
+import { Basic } from './form'
 
 const Root = () => {
 	const { theme, locale, direction } = useSettings()
@@ -18,7 +19,8 @@ const Root = () => {
 		<ThemeProvider theme={themeMode}>
 			<div dir={direction}>
 				<CssBaseline />
-				<MaterialUIComponents />
+				{/* <MaterialUIComponents /> */}
+				<Basic />
 			</div>
 		</ThemeProvider>
 	)
