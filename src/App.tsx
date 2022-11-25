@@ -3,8 +3,7 @@ import '@fontsource/poppins'
 import './App.css'
 import { SettingProvider } from './context/settings'
 import { Root } from './screen/root'
-import { Form } from './components/Form/Form'
-import {LoginForm} from './components/Form/LoginForm'
+import { LoginForm } from './screen/Form/LoginForm'
 
 function App() {
 	return (
