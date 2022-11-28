@@ -1,14 +1,14 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import OtpTextField from './OtpTextField'
-import { KEYBOARD_KEY } from '../../data/event'
+import { KEYBOARD_KEY } from 'data/event'
 import {
 	getFilledArray,
 	joinArrayStrings,
 	mergeArrayStringFromIndex,
 	updateIndex
-} from '../../helpers/array'
-import { split } from '../../helpers/string'
+} from 'helpers/array'
+import { split } from 'helpers/string'
 import { TextFieldProps as MuiTextFieldProps } from '@mui/material/TextField/TextField'
 import { BoxProps as MuiBoxProps } from '@mui/material/Box/Box'
 

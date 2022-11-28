@@ -1,4 +1,4 @@
-import { SupportedLanguageProps } from '../locales'
+import { SupportedLanguageProps } from 'locales'
 
 export const SupportedLanguage: SupportedLanguageProps[] = [
 	{

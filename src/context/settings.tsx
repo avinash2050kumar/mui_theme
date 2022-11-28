@@ -1,6 +1,6 @@
 import React, { useContext, useMemo } from 'react'
-import { useLocalStorage } from '../hooks/useMakeStorage'
-import { SupportedLocales } from '../locales'
+import { useLocalStorage } from 'hooks/useMakeStorage'
+import { SupportedLocales } from 'locales'
 
 export type ThemeProps = 'light' | 'dark'
 export type DirectionProps = 'ltr' | 'rtl'

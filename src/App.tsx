@@ -1,8 +1,8 @@
 import React from 'react'
 import '@fontsource/poppins'
 import './App.css'
-import { SettingProvider } from './context/settings'
-import { Root } from './screen/root'
+import { Root } from 'screen/root' 
+import { SettingProvider } from 'context/settings'
 
 function App() {
 	return (

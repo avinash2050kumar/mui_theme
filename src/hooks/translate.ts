@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useSettings } from '../context/settings'
-import * as locales from '../locales'
+import { useSettings } from 'context/settings'
+import * as locales from 'locales'
 
 type LangKey = keyof locales.Localization['other']
 

@@ -1,10 +1,9 @@
-import { useSettings } from '../context/settings'
+import { useSettings } from 'context/settings'
 import React from 'react'
 import { createTheme } from '@mui/material/styles'
-import { getDesignTokens } from '../theme'
+import { getDesignTokens } from 'theme'
 import { CssBaseline, ThemeProvider } from '@mui/material'
-import { MaterialUIComponents } from './muicomponents'
-import * as locales from '../locales'
+import * as locales from 'locales'
 
 const Root = () => {
 	const { theme, locale, direction } = useSettings()
@@ -18,7 +17,6 @@ const Root = () => {
 		<ThemeProvider theme={themeMode}>
 			<div dir={direction}>
 				<CssBaseline />
-				<MaterialUIComponents />
 			</div>
 		</ThemeProvider>
 	)
