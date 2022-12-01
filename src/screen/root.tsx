@@ -7,7 +7,7 @@ import { CssBaseline, ThemeProvider } from '@mui/material'
 import * as locales from 'locales'
 import { store } from 'store'
 import { Testing } from './Testing'
-
+import { FormikWithCheckBox } from './Testing/CheckBox'
 const Root = () => {
 	const { theme, locale, direction } = useSettings()
 
@@ -21,7 +21,8 @@ const Root = () => {
 			<ThemeProvider theme={themeMode}>
 				<div dir={direction}>
 					<CssBaseline />
-					<Testing />
+					{/* <Testing /> */}
+					<FormikWithCheckBox />
 				</div>
 			</ThemeProvider>
 		</StateProvider>
