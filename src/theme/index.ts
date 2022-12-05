@@ -46,21 +46,43 @@ const lightPalette = {
 const darkPalette = {
 	primary: {
 		main: '#267755',
-		contrastText: '#ffffff'
+		contrastText: '#000',
+		light: '#26875e'
 	},
-	divider: '#999',
+	secondary: {
+		main: '#6d8726',
+		light: '#9fc92a'
+	},
+	error: {
+		main: '#d32f2f',
+		light: '#ef5350'
+	},
+	warning: {
+		main: '#ed6c02',
+		light: '#ff9800'
+	},
+	info: {
+		main: '#0288d1',
+		light: '#03a9f4'
+	},
+	success: {
+		main: '#2e7d32',
+		light: '#4caf50'
+	},
+	divider: '#555',
 	background: {
-		default: '#222',
-		paper: '#333'
+		default: '#FFFFFF',
+		paper: '#fff'
 	},
 	customColor: {
 		light: '',
 		dark: '',
-		contrastText: '#ffcc00'
+		main: '#267755',
+		contrastText: '#fff'
 	},
 	text: {
-		primary: '#fff',
-		secondary: '#9e9e9e'
+		primary: '#000',
+		secondary: '#222'
 	}
 }
 
