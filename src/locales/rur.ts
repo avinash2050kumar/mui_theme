@@ -4,81 +4,83 @@ export const rur: Localization = {
 	components: {
 		MuiBreadcrumbs: {
 			defaultProps: {
-				expandText: 'रास्ता दिखायें'
+				expandText: 'Show path'
 			}
 		},
 		MuiTablePagination: {
 			defaultProps: {
 				getItemAriaLabel: type => {
 					if (type === 'first') {
-						return 'पहले पृष्ठ पर जाएँ'
+						return 'Go to first page'
 					}
 					if (type === 'last') {
-						return 'अंतिम पृष्ठ पर जाएँ'
+						return 'Go to last page'
 					}
 					if (type === 'next') {
-						return 'अगले पृष्ठ पर जाएँ'
+						return 'Go to next page'
 					}
 					// if (type === 'previous') {
-					return 'पिछले पृष्ठ पर जाएँ'
+					return 'Go to previous page'
 				},
-				labelRowsPerPage: 'صفحو في صفحو:',
+				labelRowsPerPage: 'Rows per page:',
 				labelDisplayedRows: ({ from, to, count }) =>
-					`${from}-${to === -1 ? count : to} कुल ${count} में`
+					`${from}–${to} of ${
+						count !== -1 ? count : `more than ${to}`
+					}`
 			}
 		},
 		MuiRating: {
 			defaultProps: {
-				getLabelText: value => `${value} तार${value !== 1 ? 'े' : 'ा'}`,
-				emptyLabelText: 'रिक्त'
+				getLabelText: value => `${value} Star${value !== 1 ? 's' : ''}`,
+				emptyLabelText: 'Empty'
 			}
 		},
 		MuiAutocomplete: {
 			defaultProps: {
-				clearText: 'हटायें',
-				closeText: 'बंद करें',
-				loadingText: 'लोड हो रहा है…',
-				noOptionsText: 'कोई विकल्प नहीं',
-				openText: 'खोलें'
+				clearText: 'Clear',
+				closeText: 'Close',
+				loadingText: 'Loading',
+				noOptionsText: 'No options',
+				openText: 'Open'
 			}
 		},
 		MuiAlert: {
 			defaultProps: {
-				closeText: 'बंद करें'
+				closeText: 'Close'
 			}
 		},
 		MuiPagination: {
 			defaultProps: {
-				'aria-label': 'पृस्ठानुसार संचालन',
+				'aria-label': 'Pagination navigation',
 				getItemAriaLabel: (type, page, selected) => {
 					if (type === 'page') {
-						return `पृष्ठ ${page} ${selected ? '' : ' पर जाएँ'}`
+						return `${selected ? '' : 'Go to '}page ${page}`
 					}
 					if (type === 'first') {
-						return 'पहले पृष्ठ पर जाएँ'
+						return 'Go to first page'
 					}
 					if (type === 'last') {
-						return 'अंतिम पृष्ठ पर जाएँ'
+						return 'Go to last page'
 					}
 					if (type === 'next') {
-						return 'अगले पृष्ठ पर जाएँ'
+						return 'Go to next page'
 					}
 					// if (type === 'previous') {
-					return 'पिछले पृष्ठ पर जाएँ'
+					return 'Go to previous page'
 				}
 			}
 		}
 	},
 	other: {
-		language: 'زبان',
-		title: 'ڈیمو',
+		language: 'Language',
+		title: 'Demo',
 		description:
-			'پبلشنگ اور گرافک ڈیزائن میں، Lorem ipsum ایک پلیس ہولڈر ٹیکسٹ ہے جو عام طور پر بامعنی مواد پر انحصار کیے بغیر کسی دستاویز یا ٹائپ فیس کی بصری شکل کو ظاہر کرنے کے لیے استعمال ہوتا ہے۔ حتمی کاپی دستیاب ہونے سے پہلے Lorem ipsum کو بطور پلیس ہولڈر استعمال کیا جا سکتا ہے۔',
-		darkMode: 'ڈارک',
-		lightMode: 'لائٹ',
+			'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.',
+		darkMode: 'Dark',
+		lightMode: 'Light',
 
-		name: 'Naam',
+		name: 'Name',
 		iso: 'ISO\u00a0Code',
-		population: 'Janasankhya'
+		population: 'Population'
 	}
 }
