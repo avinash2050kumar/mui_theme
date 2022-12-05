@@ -22,7 +22,7 @@ export const uen: Localization = {
 					// if (type === 'previous') {
 					return 'Go to previous page'
 				},
-				labelRowsPerPage: 'ਪ੍ਰਤੀ ਪੰਨਾ ਕਤਾਰਾਂ:',
+				labelRowsPerPage: 'Rows per page:',
 				labelDisplayedRows: ({ from, to, count }) =>
 					`${from}–${to} of ${
 						count !== -1 ? count : `more than ${to}`
@@ -39,7 +39,7 @@ export const uen: Localization = {
 			defaultProps: {
 				clearText: 'Clear',
 				closeText: 'Close',
-				loadingText: 'Loading…',
+				loadingText: 'Loading',
 				noOptionsText: 'No options',
 				openText: 'Open'
 			}
@@ -72,15 +72,15 @@ export const uen: Localization = {
 		}
 	},
 	other: {
-		language: 'Bhasha',
-		title: 'Demo Deakhe',
+		language: 'Language',
+		title: 'Demo',
 		description:
-			'prakaashan aur graaphik dijain mein, lorem ipsam ek plesaholdar tekst hai jisaka upayog aamataur par kisee dastaavez ya taipaphes ke drshy roop ko saarthak saamagree par bharosa kie bina pradarshit karane ke lie kiya jaata hai. antim prati upalabdh hone se pahale lorem ipsam ko plesaholdar ke roop mein istemaal kiya ja sakata hai.',
-		darkMode: 'Andhera',
-		lightMode: 'Ujala',
+			'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.',
+		darkMode: 'Dark',
+		lightMode: 'Light',
 
-		name: 'Naam',
+		name: 'Name',
 		iso: 'ISO\u00a0Code',
-		population: 'Janasankhya'
+		population: 'Population'
 	}
 }

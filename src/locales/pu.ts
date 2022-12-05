@@ -22,7 +22,7 @@ export const pu: Localization = {
 					// if (type === 'previous') {
 					return 'Go to previous page'
 				},
-				labelRowsPerPage: 'ਪ੍ਰਤੀ ਪੰਨਾ ਕਤਾਰਾਂ:',
+				labelRowsPerPage: 'Rows per page:',
 				labelDisplayedRows: ({ from, to, count }) =>
 					`${from}–${to} of ${
 						count !== -1 ? count : `more than ${to}`
@@ -39,7 +39,7 @@ export const pu: Localization = {
 			defaultProps: {
 				clearText: 'Clear',
 				closeText: 'Close',
-				loadingText: 'Loading…',
+				loadingText: 'Loading',
 				noOptionsText: 'No options',
 				openText: 'Open'
 			}
@@ -72,15 +72,15 @@ export const pu: Localization = {
 		}
 	},
 	other: {
-		language: 'ਭਾਸ਼ਾ',
-		title: 'ਡੈਮੋ',
+		language: 'Language',
+		title: 'Demo',
 		description:
-			'ਪ੍ਰਕਾਸ਼ਨ ਅਤੇ ਗ੍ਰਾਫਿਕ ਡਿਜ਼ਾਈਨ ਵਿੱਚ, Lorem ipsum ਇੱਕ ਪਲੇਸਹੋਲਡਰ ਟੈਕਸਟ ਹੈ ਜੋ ਆਮ ਤੌਰ ਤੇ ਅਰਥਪੂਰਨ ਸਮੱਗਰੀ ਤੇ ਨਿਰਭਰ ਕੀਤੇ ਬਿਨਾਂ ਇੱਕ ਦਸਤਾਵੇਜ਼ ਜਾਂ ਟਾਈਪਫੇਸ ਦੇ ਵਿਜ਼ੂਅਲ ਰੂਪ ਨੂੰ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ। ਅੰਤਿਮ ਕਾਪੀ ਉਪਲਬਧ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ Lorem ipsum ਨੂੰ ਪਲੇਸਹੋਲਡਰ ਵਜੋਂ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।',
-		darkMode: 'ਡਾਰਕ',
-		lightMode: 'ਲਾਈਟ',
+			'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.',
+		darkMode: 'Dark',
+		lightMode: 'Light',
 
-		name: 'ਨਾਮ',
+		name: 'Name',
 		iso: 'ISO\u00a0Code',
-		population: 'ਜਨਸੰਖਿਆ'
+		population: 'Population'
 	}
 }
