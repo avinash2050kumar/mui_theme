@@ -42,18 +42,16 @@ export interface Localization {
 		}
 	}
 	other: {
-		// remove based on your requirement
-		language: string
-		title: string
-		description: string
-		darkMode: string
-		lightMode: string
-
-		// for demo
-
-		name: string
-		iso: string
-		population: string
+		home: string
+		ordercenter: string
+		contacts: string
+		inventory: string
+		quotation: string
+		invoices: string
+		analytics: string
+		creditbook: string
+		logout: string
+		menu: string
 	}
 }
 

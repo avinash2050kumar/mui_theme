@@ -72,15 +72,15 @@ export const en: Localization = {
 		}
 	},
 	other: {
-		language: 'Language',
-		title: 'Demo',
-		description:
-			'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.',
-		darkMode: 'Dark',
-		lightMode: 'Light',
-
-		name: 'Name',
-		iso: 'ISO\u00a0Code',
-		population: 'Population'
+		home: 'Home',
+		ordercenter: 'Order Center',
+		contacts: 'Contacts',
+		inventory: 'Inventory',
+		quotation: 'Quotation',
+		invoices: 'Invoices',
+		analytics: 'Analytics',
+		creditbook: 'Creditbook',
+		logout: 'Logout',
+		menu: 'Menu'
 	}
 }

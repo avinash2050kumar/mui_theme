@@ -70,15 +70,15 @@ export const rur: Localization = {
 		}
 	},
 	other: {
-		language: 'زبان',
-		title: 'ڈیمو',
-		description:
-			'پبلشنگ اور گرافک ڈیزائن میں، Lorem ipsum ایک پلیس ہولڈر ٹیکسٹ ہے جو عام طور پر بامعنی مواد پر انحصار کیے بغیر کسی دستاویز یا ٹائپ فیس کی بصری شکل کو ظاہر کرنے کے لیے استعمال ہوتا ہے۔ حتمی کاپی دستیاب ہونے سے پہلے Lorem ipsum کو بطور پلیس ہولڈر استعمال کیا جا سکتا ہے۔',
-		darkMode: 'ڈارک',
-		lightMode: 'لائٹ',
-
-		name: 'Naam',
-		iso: 'ISO\u00a0Code',
-		population: 'Janasankhya'
+		home: 'Home',
+		ordercenter: 'Order Center',
+		contacts: 'Contacts',
+		inventory: 'Inventory',
+		quotation: 'Quotation',
+		invoices: 'Invoices',
+		analytics: 'Analytics',
+		creditbook: 'Creditbook',
+		logout: 'Logout',
+		menu: 'Menu'
 	}
 }

@@ -6,7 +6,7 @@ import { Provider as StateProvider } from 'react-redux'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import * as locales from 'locales'
 import { store } from 'store'
-import { Testing } from './Testing'
+import AppRoutes from './routes'
 
 const Root = () => {
 	const { theme, locale, direction } = useSettings()
@@ -21,7 +21,7 @@ const Root = () => {
 			<ThemeProvider theme={themeMode}>
 				<div dir={direction}>
 					<CssBaseline />
-					<Testing />
+					<AppRoutes />
 				</div>
 			</ThemeProvider>
 		</StateProvider>

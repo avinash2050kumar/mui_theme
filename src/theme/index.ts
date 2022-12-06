@@ -18,7 +18,8 @@ const lightPalette = {
 	},
 	text: {
 		primary: '#000',
-		secondary: '#222'
+		secondary: '#fff',
+
 	}
 }
 

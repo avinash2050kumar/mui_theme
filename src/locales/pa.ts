@@ -70,15 +70,15 @@ export const pa: Localization = {
 		}
 	},
 	other: {
-		language: 'भाषा',
-		title: 'डेमो',
-		description:
-			'प्रकाशन और ग्राफिक डिजाइन में, लोरेम इप्सम एक प्लेसहोल्डर टेक्स्ट है जिसका उपयोग आमतौर पर किसी दस्तावेज़ या टाइपफेस के दृश्य रूप को सार्थक सामग्री पर भरोसा किए बिना प्रदर्शित करने के लिए किया जाता है। अंतिम प्रति उपलब्ध होने से पहले लोरेम इप्सम को प्लेसहोल्डर के रूप में इस्तेमाल किया जा सकता है।',
-		darkMode: 'डार्क',
-		lightMode: 'लाइट',
-
-		name: 'नाम',
-		iso: 'आईएसओ\u00a0कोड',
-		population: 'जनसंख्या'
+		home: 'Home',
+		ordercenter: 'Order Center',
+		contacts: 'Contacts',
+		inventory: 'Inventory',
+		quotation: 'Quotation',
+		invoices: 'Invoices',
+		analytics: 'Analytics',
+		creditbook: 'Creditbook',
+		logout: 'Logout',
+		menu: 'Menu'
 	}
 }
