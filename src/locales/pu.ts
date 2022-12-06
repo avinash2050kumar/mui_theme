@@ -72,15 +72,15 @@ export const pu: Localization = {
 		}
 	},
 	other: {
-		language: 'ਭਾਸ਼ਾ',
-		title: 'ਡੈਮੋ',
-		description:
-			'ਪ੍ਰਕਾਸ਼ਨ ਅਤੇ ਗ੍ਰਾਫਿਕ ਡਿਜ਼ਾਈਨ ਵਿੱਚ, Lorem ipsum ਇੱਕ ਪਲੇਸਹੋਲਡਰ ਟੈਕਸਟ ਹੈ ਜੋ ਆਮ ਤੌਰ ਤੇ ਅਰਥਪੂਰਨ ਸਮੱਗਰੀ ਤੇ ਨਿਰਭਰ ਕੀਤੇ ਬਿਨਾਂ ਇੱਕ ਦਸਤਾਵੇਜ਼ ਜਾਂ ਟਾਈਪਫੇਸ ਦੇ ਵਿਜ਼ੂਅਲ ਰੂਪ ਨੂੰ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ। ਅੰਤਿਮ ਕਾਪੀ ਉਪਲਬਧ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ Lorem ipsum ਨੂੰ ਪਲੇਸਹੋਲਡਰ ਵਜੋਂ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।',
-		darkMode: 'ਡਾਰਕ',
-		lightMode: 'ਲਾਈਟ',
-
-		name: 'ਨਾਮ',
-		iso: 'ISO\u00a0Code',
-		population: 'ਜਨਸੰਖਿਆ'
+		home: 'Home',
+		ordercenter: 'Order Center',
+		contacts: 'Contacts',
+		inventory: 'Inventory',
+		quotation: 'Quotation',
+		invoices: 'Invoices',
+		analytics: 'Analytics',
+		creditbook: 'Creditbook',
+		logout: 'Logout',
+		menu: 'Menu'
 	}
 }

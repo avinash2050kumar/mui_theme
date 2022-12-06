@@ -72,15 +72,15 @@ export const uen: Localization = {
 		}
 	},
 	other: {
-		language: 'Bhasha',
-		title: 'Demo Deakhe',
-		description:
-			'prakaashan aur graaphik dijain mein, lorem ipsam ek plesaholdar tekst hai jisaka upayog aamataur par kisee dastaavez ya taipaphes ke drshy roop ko saarthak saamagree par bharosa kie bina pradarshit karane ke lie kiya jaata hai. antim prati upalabdh hone se pahale lorem ipsam ko plesaholdar ke roop mein istemaal kiya ja sakata hai.',
-		darkMode: 'Andhera',
-		lightMode: 'Ujala',
-
-		name: 'Naam',
-		iso: 'ISO\u00a0Code',
-		population: 'Janasankhya'
+		home: 'Home',
+		ordercenter: 'Order Center',
+		contacts: 'Contacts',
+		inventory: 'Inventory',
+		quotation: 'Quotation',
+		invoices: 'Invoices',
+		analytics: 'Analytics',
+		creditbook: 'Creditbook',
+		logout: 'Logout',
+		menu: 'Menu'
 	}
 }

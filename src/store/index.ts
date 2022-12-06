@@ -1,5 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import createSagaMiddleware from 'redux-saga'
+import axios from 'utils/axios'
+import setupAxiosInterceptor from 'utils/axios/AxiosInterceptor'
 
 import IndexReducer from './index-reducer'
 import IndexSaga from './index-saga'
@@ -21,6 +23,7 @@ const store = createStore(
 	composeSetup(applyMiddleware(...middleware))
 )
 
+setupAxiosInterceptor(axios, store)
 sagaMiddleware.run(IndexSaga)
 
-export { store }
+export { store, axios }
