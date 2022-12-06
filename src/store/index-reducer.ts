@@ -1,11 +1,9 @@
 import { combineReducers } from 'redux'
 
-import testing from 'store/testing'
 import user from 'store/user'
 import auth from 'store/auth'
 
 const rootReducer = combineReducers({
-	testing,
 	user,
 	auth
 })
